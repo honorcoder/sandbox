@@ -1,41 +1,22 @@
 <!DOCTYPE html>
-
 <html>
-
 <body>
 
-<img id="cupcake" onclick="switch()" src="CandleOn.gif.gif" width="auto" height="auto">
+<img id="myImage" onclick="changeImage()" src="CandleOn.gif.gif" width="100" height="180">
 
-<h> Click the candle to blow it out, and click it to relight the flame! </h>
+	<br>
+<h>Click to blow out the candle/click to light!</h>
 
 <script>
-
-function switch() {
-
-var image = document.getElementById('cupcake'):
-
-if (image.src.match("CandleOn"))
-
-
-	{
-	
-	image.src = "CandleOFF.gif.gif";
-
-
-	}
-
-	
-	else  {
-
-	image.src = "CandleOn.gif.gif"
-
-	}
-
-	}
-
-	
+function changeImage() {
+    var image = document.getElementById('myImage');
+    if (image.src.match("CandleOn")) {
+        image.src = "CandleOFF.gif.gif";
+    } else {
+        image.src = "CandleOn.gif.gif";
+    }
+}
 </script>
 
 </body>
-
 </html>
