@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+<img id="cupcake" onclick="switch()" src="candleON.gif" width="auto" height="auto">
+
+<h> Click the candle to blow it out, and click it to relight the flame! </h>
+
+<script>
+
+function
+
+switch() {
+
+var image = document.getElementById('cupcake'):
+
+if (image.src.match("candleON"))
+
+
+	{
+	
+	image.src = "candleOUT.png";
+
+
+	}
+
+	
+	else  {
+
+	image.src = "candleON.png"
+
+	}
+
+	}
+
+	
+</script>
+
+</body>
+
+</html>
